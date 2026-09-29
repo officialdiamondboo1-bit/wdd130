@@ -185,3 +185,36 @@ footer p {
 .socialmedia img:hover {
     transform: scale(1.15); /* Subtle pop effect on hover */
 }
+
+/* --- W04 Header Grid & Nav Flex Layout --- */
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr; /* Distinct columns for logo and nav bar */
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--secondary-color);
+}
+
+header img {
+    height: 60px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Shoves links over to the right side smoothly */
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}

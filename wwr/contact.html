@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting Company</title>
+    <meta name="description" content="Get in touch with White Water Rafting Company. Contact us via phone, email, or our online form for reservations and inquiries.">
+    <meta name="author" content="Godswill Ayang">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+    <!-- Page Title & Company Info -->
+    <section class="contact-info">
+        <h1>White Water Rafting Company</h1>
+        <p>123 Main River Street<br>Kolob, California<br>+1 999 999 9999<br>info@whitewater.com</p>
+        
+        <!-- Embedded Google Map -->
+        <!-- Note: Replace the src URL below with an actual Google Maps embed link if desired -->
+        <div class="map-container">
+            <iframe src="https://google.com" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <form action="#" method="post" class="contact-form">
+            <div class="form-item">
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" name="userName" placeholder="Your Name" required>
+            </div>
+
+            <div class="form-item">
+                <label for="user-email">Email</label>
+                <input type="email" id="user-email" name="userEmail" placeholder="username@example.com" required>
+            </div>
+
+            <div class="form-item radio-group">
+                <span class="label-heading">Message Purpose</span>
+                
+                <label><input type="radio" name="purpose" value="general" checked> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+            </div>
+
+            <div class="form-item">
+                <label for="user-message">Message</label>
+                <textarea id="user-message" name="userMessage" rows="5" placeholder="Type here" required></textarea>
+            </div>
+
+            <div class="form-item checkbox-group">
+                <label>
+                    <input type="checkbox" name="subscribe" value="yes" checked> Please subscribe me to the monthly newsletter
+                </label>
+            </div>
+
+            <button type="submit">Get in Touch!</button>
+        </form>
+    </section>
+
+    <!-- Employee Profiles Section -->
+    <section class="employee-section">
+        <h2>We Are Here to Serve You</h2>
+        <div class="employee-grid">
+            <figure>
+                <img src="images/employee1.jpg" alt="Portrait of John Doe, River Guide Manager">
+                <figcaption>John Doe - River Guide Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Portrait of Jane Smith, Safety Coordinator">
+                <figcaption>Jane Smith - Safety Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Portrait of Sam Wilson, Operations Lead">
+                <figcaption>Sam Wilson - Operations Lead</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+        <footer>
+        <p>&copy; 2026 White Water Rafting Company | Godswill Ayang | WDD 130</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/x.png" alt="X">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+</html>

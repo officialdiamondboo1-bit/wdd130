@@ -44,6 +44,9 @@ nav a:hover {
     position: relative;
     text-align: center;
     margin-bottom: 40px;
+    background-color: #e0f2fe; /* Light river blue fallback color background */
+    border-radius: 8px;
+    padding: 20px 0;
 }
 
 .hero-bg {

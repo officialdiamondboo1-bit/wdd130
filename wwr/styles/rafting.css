@@ -229,3 +229,79 @@ footer {
     height: 32px;
     object-fit: contain;
 }
+/* ==========================================================================
+   W06 Trips Page Grid Layout Rules
+   ========================================================================== */
+
+.trips-page-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.trips-intro {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.trips-display-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trip-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #e0f2fe;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.trip-details {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trip-details h2 {
+    margin: 0 0 10px 0;
+    color: #054e70;
+}
+
+.trip-stats {
+    font-weight: bold;
+    color: #ff9900;
+    margin: 0 0 15px 0;
+}
+
+.book-now-btn {
+    align-self: flex-start;
+    background-color: #054e70;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.book-now-btn:hover {
+    background-color: #03364d;
+}

@@ -1,13 +1,14 @@
 /* ==========================================================================
-   WWD130 Rafting Project Master Stylesheet
+   WDD130 Rafting Project Master Stylesheet
    ========================================================================== */
 
-/* --- General Site Settings --- */
+/* --- General Shared Site Settings --- */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
+    background-color: #ffffff;
 }
 
 header {
@@ -20,6 +21,7 @@ header {
 
 header img {
     height: 50px;
+    object-fit: contain;
 }
 
 nav a {
@@ -33,7 +35,31 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* --- Home Page Specific Styling --- */
+/* --- Shared Footer Styling --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #f0f0f0;
+    margin-top: 40px;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia img {
+    width: 32px !important;
+    height: 32px !important;
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   1. Home Page Specific Styling 
+   ========================================================================== */
 .home-page-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -44,7 +70,7 @@ nav a:hover {
     position: relative;
     text-align: center;
     margin-bottom: 40px;
-    background-color: #e0f2fe; /* Light river blue fallback color background */
+    background-color: #e0f2fe; 
     border-radius: 8px;
     padding: 20px 0;
 }
@@ -156,7 +182,10 @@ nav a:hover {
     margin-top: 10px;
 }
 
-/* --- Contact Page Specific Styling --- */
+
+/* ==========================================================================
+   2. Contact Page Specific Layout Rules (Grading Fixes)
+   ========================================================================== */
 main.contact-grid-layout {
     max-width: 1100px;
     margin: 20px auto;
@@ -182,11 +211,59 @@ main.contact-grid-layout {
     gap: 5px;
 }
 
-.radio-group, .checkbox-group {
+/* Page Audit report compliance fix for fieldset borders */
+fieldset.radio-group {
+    border: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
+}
+
+fieldset.radio-group legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    width: 100%;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.radio-group label, .checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.contact-form button {
+    background-color: #054e70;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #03364d;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-height: 450px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 15px;
 }
 
 .employee-section {
@@ -203,36 +280,22 @@ main.contact-grid-layout {
     text-align: center;
 }
 
+.employee-grid figure {
+    margin: 0;
+    padding: 10px;
+}
+
 .employee-grid img {
     width: 120px;
     height: 120px;
     object-fit: contain;
+    margin-bottom: 10px;
 }
 
-/* --- Shared Footer Styling --- */
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: #f0f0f0;
-    margin-top: 40px;
-}
 
-.socialmedia {
-    display: flex;
-    gap: 15px;
-}
-
-.socialmedia img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
 /* ==========================================================================
-   W06 Trips Page Grid Layout Rules
+   3. Trips Page Specific Layout Rules
    ========================================================================== */
-
 .trips-page-container {
     max-width: 1200px;
     margin: 30px auto;
@@ -249,31 +312,32 @@ footer {
 .trips-display-grid {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 35px;
+    margin-top: 20px;
 }
 
 .trip-card {
     display: grid;
-    grid-template-columns: 300px 1fr;
-    background-color: #fcfcfc;
-    border: 1px solid #e0e0e0;
+    grid-template-columns: 280px 1fr;
+    background-color: #fbfbfb;
+    border: 1px solid #e2e8f0;
     border-radius: 8px;
     overflow: hidden;
     text-align: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
 .trip-card img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: #e0f2fe;
+    background-color: #f0f9ff;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .trip-details {
-    padding: 25px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -294,12 +358,11 @@ footer {
     align-self: flex-start;
     background-color: #054e70;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 22px;
     text-decoration: none;
     border-radius: 4px;
     font-weight: bold;
     margin-top: 15px;
-    transition: background 0.2s;
 }
 
 .book-now-btn:hover {
